@@ -16,14 +16,12 @@ int main () {
         int a, b, c;
         int div_or_int;
 
-	printf("Enter a, b, and c:");
-	scanf("%d %d %d", &a, &b, &c);
-
+	    printf("Enter a, b, and c:");
+	    scanf("%d %d %d", &a, &b, &c);
         printf("\nThe equation you entered was %dx^2 + %dx + %d", a, b, c);
-
         printf("\n(1) Derivative");
         printf("\n(2) Integral\n");
-	printf("Select Option: ");
+	    printf("Select Option: ");
         scanf("%d", &div_or_int);
 
         switch (div_or_int) {
