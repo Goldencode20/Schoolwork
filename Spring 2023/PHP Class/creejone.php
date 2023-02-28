@@ -32,8 +32,8 @@ if ($resultArray == NULL) { //Check if the user did not upload a number higher t
 
 $responseURL = $_GET["response_url"];
 //echo $responseURL;
-
-$payload = ["type" => "image", "image_url" => $resultArray["img"]];
+$imageURL = $resultArray["img"];
+$payload = ["attachments" => [["image_url" => $imageURL]]];
 $payloadJSON = json_encode($payload);
 $curlHandleSlack = curl_init($responseURL);
 curl_setopt($curlHandleSlack, CURLOPT_POST, true);
