@@ -31,8 +31,15 @@ void dyal() {
 
 //Pointers
 
-void point() {
-
+void pointers() {
+    double dblVar; 
+    double *dblPtr = &dblVar; //This points to the location of dblVar
+    double* dblPtr1 = &dblVar; //Same as above
+    printf("%p", dblPtr); //print the location of dblVar 
+    printf("%p", &dblPtr); //print the location of dblPtr
+    dblPtr++; //This moves the pointer up 1 byte or 4 bits. Great for looping through an array
+    //Array of pointers is helpful to look at the arry without needing the arry.
+    //Double Pointer is good when you want to presever or retain a change in the memory allocation or assignment outside a funtion call
 }
 
 //Char array
