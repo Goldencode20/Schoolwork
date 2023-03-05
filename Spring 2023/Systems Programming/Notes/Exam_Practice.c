@@ -50,7 +50,7 @@ void charAr() {
     char sentence1[10] = "hello";
 
     //The two above are the same
-
+//temp
 
     int ar[10] = {1,2,3,4,5,6};
 }
